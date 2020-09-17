@@ -1,15 +1,9 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.Data.SqlClient;
-using System.Text;
 using System.Data;
-using System.Net.WebSockets;
+using System.Collections.Generic;
 
 namespace Electronic_Business
 {
@@ -28,14 +22,30 @@ namespace Electronic_Business
 
             using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
             {
-                Console.WriteLine("\nQuery data example:");
-                Console.WriteLine("=========================================\n");
+                using (cmd = new SqlCommand("Search_Customers", connection)) {
+                    cmd.CommandType = CommandType.StoredProcedure;
                     connection.Open();
                     Console.WriteLine(connection.State);
-                    cmd.CommandText = "Search_Customers";
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    da.SelectCommand = cmd;
-                    da.Fill(ds);
+                    string cadena = "";
+                    //da.SelectCommand = cmd;
+                    //da.Fill(ds);
+
+                    using (var recordset = cmd.ExecuteReader())
+                    {
+                        while (recordset.Read())
+                        {
+                            // asignamos los valores del recordset mediante un 
+                            // método en el que formateamos los valores recibidos
+                            cadena += recordset.ToString();
+                            System.Diagnostics.Debug.WriteLine("\nQuery data example:");
+                            System.Diagnostics.Debug.WriteLine("CADENA "+cadena);
+                            System.Diagnostics.Debug.WriteLine("=========================================\n");
+                        }
+                        Console.WriteLine(cadena);
+                    }
+
+                }
+                    
                     
                 
             }

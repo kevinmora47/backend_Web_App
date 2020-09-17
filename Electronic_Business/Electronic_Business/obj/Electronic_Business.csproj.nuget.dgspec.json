@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kmorav\\Documents\\GitHub Repos\\E-BusinessWebApp\\backend_Web_App\\Electronic_Business\\Electronic_Business\\Electronic_Business.csproj": {}
+    "C:\\Users\\areli\\Source\\Repos\\kevinmora47\\backend_Web_App\\Electronic_Business\\Electronic_Business\\Electronic_Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kmorav\\Documents\\GitHub Repos\\E-BusinessWebApp\\backend_Web_App\\Electronic_Business\\Electronic_Business\\Electronic_Business.csproj": {
+    "C:\\Users\\areli\\Source\\Repos\\kevinmora47\\backend_Web_App\\Electronic_Business\\Electronic_Business\\Electronic_Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kmorav\\Documents\\GitHub Repos\\E-BusinessWebApp\\backend_Web_App\\Electronic_Business\\Electronic_Business\\Electronic_Business.csproj",
+        "projectUniqueName": "C:\\Users\\areli\\Source\\Repos\\kevinmora47\\backend_Web_App\\Electronic_Business\\Electronic_Business\\Electronic_Business.csproj",
         "projectName": "Electronic_Business",
-        "projectPath": "C:\\Users\\kmorav\\Documents\\GitHub Repos\\E-BusinessWebApp\\backend_Web_App\\Electronic_Business\\Electronic_Business\\Electronic_Business.csproj",
-        "packagesPath": "C:\\Users\\kmorav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kmorav\\Documents\\GitHub Repos\\E-BusinessWebApp\\backend_Web_App\\Electronic_Business\\Electronic_Business\\obj\\",
+        "projectPath": "C:\\Users\\areli\\Source\\Repos\\kevinmora47\\backend_Web_App\\Electronic_Business\\Electronic_Business\\Electronic_Business.csproj",
+        "packagesPath": "C:\\Users\\areli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\areli\\Source\\Repos\\kevinmora47\\backend_Web_App\\Electronic_Business\\Electronic_Business\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kmorav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\areli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,6 +41,14 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[2.0.1, )"
+            },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
             }
           },
           "imports": [
@@ -64,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
