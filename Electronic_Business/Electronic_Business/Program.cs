@@ -36,6 +36,8 @@ namespace Electronic_Business
                         {
                             // asignamos los valores del recordset mediante un 
                             // método en el que formateamos los valores recibidos
+                            // método en el que formateamos los valores recibidos
+
                             cadena += recordset.ToString();
                             System.Diagnostics.Debug.WriteLine("\nQuery data example:");
                             System.Diagnostics.Debug.WriteLine("CADENA "+cadena);
